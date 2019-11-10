@@ -11,7 +11,6 @@
       :value="value"
       :name="name"
       :id="name"
-      :type="type"
       @input="$emit('input', $event.target.value)"
       @change="$emit('input', $event.target.value)"
     >
@@ -42,10 +41,6 @@ export default {
     hasError: {
       type: Boolean,
       default: false
-    },
-    type: {
-      type: String,
-      default: 'text'
     }
   }
 }
